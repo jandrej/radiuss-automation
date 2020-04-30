@@ -1,0 +1,18 @@
+##############################################################################
+# Copyright (c) 2020, Lawrence Livermore National Security, LLC and
+# RADIUSS Automation project contributors. See the LICENSE file for details.
+#
+# SPDX-License-Identifier: MIT
+##############################################################################
+
+# There are no tests for now
+stages:
+  - build
+
+first_job:
+  tags:
+    - shell
+    - quartz
+  stage: build
+  script:
+    - echo "Hello World"
